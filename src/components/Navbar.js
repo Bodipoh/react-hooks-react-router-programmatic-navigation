@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink, useHistory } from "react-router-dom";
-
 const linkStyles = {
   width: "100px",
   padding: "12px",
@@ -17,7 +16,6 @@ function Navbar({ setIsLoggedIn }) {
     setIsLoggedIn(false);
     history.push("/login");
   }
-
   return (
     <div>
       <NavLink
@@ -57,5 +55,4 @@ function Navbar({ setIsLoggedIn }) {
     </div>
   );
 }
-
 export default Navbar;
